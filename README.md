@@ -20,6 +20,10 @@
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
+## 📚 Additional Documentation
+- **[AGENTS.md](AGENTS.md)** - Comprehensive guide to agent architecture, workflow orchestration, and quality assurance
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Guidelines for contributing code, documentation, and conducting code reviews
+
 ---
 
 ## 🎯 Overview
@@ -142,6 +146,8 @@ This implementation goes beyond basic RAG systems by incorporating:
 │  └──────────────────────────────────────────────────────┘      │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+> **📘 Deep Dive**: For a comprehensive understanding of the agent architecture, workflow orchestration, state management, and quality assurance mechanisms, see **[AGENTS.md](AGENTS.md)**.
 
 ### Data Flow
 
@@ -1294,9 +1300,9 @@ Track these metrics in production:
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how to get started:
+We welcome contributions! This project thrives on community involvement.
 
-### Development Setup
+### Quick Start for Contributors
 
 ```bash
 # 1. Fork and clone
@@ -1307,47 +1313,44 @@ cd LangGraph-RAG-Agent
 python -m venv .venv
 source .venv/bin/activate
 
-# 3. Install dev dependencies
-pip install -e ".[dev]"
+# 3. Install dependencies
+pip install uv
+uv sync
 
 # 4. Create feature branch
 git checkout -b feature/your-feature-name
 ```
 
-### Code Style
-- Use **Black** for formatting: `black .`
-- Use **isort** for imports: `isort .`
-- Follow **PEP 8** guidelines
-- Add **type hints** to all functions
-- Write **docstrings** for public APIs
+### Code Review Process
 
-### Commit Messages
-Follow [Conventional Commits](https://www.conventionalcommits.org/):
+All contributions go through our structured code review process:
 
-```
-feat: add support for CSV files
-fix: resolve Qdrant connection timeout
-docs: update installation instructions
-refactor: simplify retriever creation
-test: add unit tests for ingest module
-```
+1. **Automated Checks** - Code formatting, linting, and tests
+2. **Manual Review** - Code quality, functionality, and documentation review
+3. **Feedback & Iteration** - Address reviewer comments
+4. **Merge** - Your contribution becomes part of the project!
 
-### Pull Request Process
-1. Update documentation if needed
-2. Add tests for new features
-3. Ensure all tests pass
-4. Update CHANGELOG.md
-5. Create PR with clear description
+### Key Guidelines
+
+- **Code Style**: Use Black and isort for formatting
+- **Type Hints**: Always include type annotations
+- **Documentation**: Update relevant docs (README, AGENTS.md)
+- **Tests**: Add tests for new functionality
+- **Commits**: Follow [Conventional Commits](https://www.conventionalcommits.org/) format
 
 ### Areas for Contribution
-- 🆕 Add support for more document formats (CSV, HTML, Markdown)
-- 🎨 Improve UI/UX of Streamlit app
-- 📊 Add monitoring and observability
-- 🧪 Increase test coverage
-- 🌐 Add internationalization (i18n)
-- 📝 Improve documentation and examples
-- ⚡ Performance optimizations
-- 🔧 Add configuration presets
+
+We especially welcome contributions in these areas:
+
+- 🤖 **Agent Development**: Improve or add new agents to the workflow
+- 📊 **Monitoring**: Add observability and performance metrics
+- 🧪 **Testing**: Increase test coverage
+- 📝 **Documentation**: Improve guides and examples
+- ⚡ **Performance**: Optimize retrieval and generation
+- 🎨 **UI/UX**: Enhance the Streamlit interface
+- 🔧 **Features**: Add support for new document formats, multi-language, etc.
+
+**For detailed contribution guidelines, code review process, and development standards, see [CONTRIBUTING.md](CONTRIBUTING.md).**
 
 ---
 
